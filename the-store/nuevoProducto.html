@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Producto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i">
+</head>
+<body>
+    <nav>
+        <div class="nav-main">
+            <div>
+                <img src="./img/logoApp.svg" alt="logo">
+            </div>
+        <ul class="menu">
+            <li>
+                <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="/index.html">Productos</a>
+            </li>
+            <li>
+                <a href="/carrito.html">Carrito</a>
+            </li>
+            <li>
+                <a href="#">login</a>
+            </li>
+        </ul>
+       </div>
+    </nav>
+    <div class="formulario">
+        <h1>Nuevo Producto</h1>
+        <p>Escriba los siguientes datos</p>
+            <form action="ejemplo.html" method="post">
+                <label id="lblNombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label id="lblPrecio">Precio:</label>
+                <input type="number" name="precio" id="precio">
+                 <br><br>
+                <label id="lblInventario">Inventario:</label>
+                <select id="inventario">
+                <optgroup label="Inventario">
+                    <option>Ninguno</option>
+                    <option>Ropa</option>
+                    <option>Hogar</option>
+                    <option>Accesorios</option>
+                    <option>Tecnologia</option>
+                </optgroup>
+            </select><br><br>      
+            <input type="submit" value="Crear Producto">
+        </form>
+        
+    </div>
+    <script src="/js/validacion.js"></script>
+</body>
+</html>
